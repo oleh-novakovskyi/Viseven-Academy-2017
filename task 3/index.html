@@ -1,0 +1,150 @@
+<html>
+<head>
+<meta charset="utf-8">        
+        <meta name="author" content="ntym.net.ua">
+        <meta name="publisher" content="Oleh Novakovskyi">
+        <meta name="description" content="Task number three 2017">
+        <meta name="keywords" content="html5, css3, js, grid">
+        <title>Welcome to imagestock [Task three]</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css">    
+    	<script src="js/main.js"></script>
+</head>
+
+<body>
+<header>
+    <h2>Welcome to <span>imagestock</span></h2>
+</header>
+<main>
+    <article id="items">
+        <figure>
+            <img src="img/1.jpg" alt="">
+            <figcaption>
+                <span class="comm badge" data-badge="0"></span>
+                <span class="dislike badge" data-badge="0"></span>
+                <span class="like badge" data-badge="0"></span>
+            </figcaption>
+            <div class="storage"></div>
+        </figure>
+        <figure>
+            <img src="img/2.jpg" alt="">
+            <figcaption>
+                <span class="comm badge" data-badge="0"></span>
+                <span class="dislike badge" data-badge="0"></span>
+                <span class="like badge" data-badge="0"></span>
+            </figcaption>
+            <div class="storage"></div>
+        </figure>
+        <figure>
+            <img src="img/3.jpg" alt="">
+            <figcaption>
+                <span class="comm badge" data-badge="0"></span>
+                <span class="dislike badge" data-badge="0"></span>
+                <span class="like badge" data-badge="0"></span>
+            </figcaption>
+            <div class="storage"></div>
+        </figure>
+        <figure>
+            <img src="img/4.jpg" alt="">
+            <figcaption>
+                <span class="comm badge" data-badge="0"></span>
+                <span class="dislike badge" data-badge="0"></span>
+                <span class="like badge" data-badge="0"></span>
+            </figcaption>
+            <div class="storage"></div>
+        </figure>
+        <figure>
+            <img src="img/5.jpg" alt="">
+            <figcaption>
+                <span class="comm badge" data-badge="0"></span>
+                <span class="dislike badge" data-badge="0"></span>
+                <span class="like badge" data-badge="0"></span>
+            </figcaption>
+            <div class="storage"></div>
+        </figure>
+        <figure>
+            <img src="img/6.jpg" alt="">
+            <figcaption>
+                <span class="comm badge" data-badge="0"></span>
+                <span class="dislike badge" data-badge="0"></span>
+                <span class="like badge" data-badge="0"></span>
+            </figcaption>
+            <div class="storage"></div>
+        </figure>
+        <figure>
+            <img src="img/7.jpg" alt="">
+            <figcaption>
+                <span class="comm badge" data-badge="0"></span>
+                <span class="dislike badge" data-badge="0"></span>
+                <span class="like badge" data-badge="0"></span>
+            </figcaption>
+            <div class="storage"></div>
+        </figure>
+        <figure>
+            <img src="img/8.jpg" alt="">
+            <figcaption>
+                <span class="comm badge" data-badge="0"></span>
+                <span class="dislike badge" data-badge="0"></span>
+                <span class="like badge" data-badge="0"></span>
+            </figcaption>
+            <div class="storage"></div>
+        </figure>
+
+        <section id="add-plus">
+            <button id="plus" class="plus">+</button>
+            <p>Add your <br>Picture</p>
+        </section>
+    </article>
+    <!-- Modal -->
+    <div id="myModal" class="modal">
+        <!-- -->
+        <div class="modal-content">
+            <span id="close-modal" class="close"></span>
+            <figure>
+                <img src="img/1.jpg" alt="">
+                <figcaption>
+                    <button class="dislike-btn" id="d-btn">
+                        <span class="badge" data-badge="0" id="add-dislike"></span>
+                    </button>
+
+                    <button class="like-btn" id="l-btn">
+                        <span class="badge" data-badge="0" id="add-like"></span>
+                    </button>
+                </figcaption>
+            </figure>
+            <section class="box">
+                <h3>Comments: <span id="sum-com"></span></h3>
+                <aside id="modal-msg-list" class="right">
+
+                </aside>
+                <section class="form-box">
+                    <form action="" id="myform">
+                        <input type="text" id="name" value="" placeholder="Type your nickname here..." name="name">
+                        <section class="txt-btn">
+                            <textarea id="desc" placeholder="Write your comment here..." name="msg"></textarea>
+                            <input id="date" type="hidden" />
+                            <input id="add-msg" type="button" />
+                        </section>
+                    </form>
+                </section>
+            </section>
+        </div>
+    </div>
+
+    <!-- figure tempalate -->
+    <div style="display: none;">
+        <figure id="figure-template">
+            <img src="" alt="">
+            <figcaption>
+                <span class="comm badge" data-badge="0"></span>
+                <span class="dislike badge" data-badge="0"></span>
+                <span class="like badge" data-badge="0"></span>
+            </figcaption>
+            <div class="storage"></div>            
+        </figure>
+
+    </div>
+    <!-- -->
+
+</main>
+</body>
+</html>
