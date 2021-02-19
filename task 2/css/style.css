@@ -1,0 +1,573 @@
+@font-face { 
+    font-family: 'FuturaMediumC';  
+    src: local('FuturaMediumC'), url('https://nomail.com.ua/files/woff/047c56cc37e017c6be47821ec5cac9de.woff') format('woff'); 
+}
+* {
+    margin:0;
+    padding:0;
+}
+
+main {
+    width:1024px;
+    height: 768px;
+    background-image: url(../img/main.jpg);
+    position: relative;
+}
+
+.step-1-1 {
+    z-index: 2;
+    position: absolute;
+    background-image: url(../img/step_1_1.png);
+    top: 0;
+    right: 0;
+    width: 1021px;
+    height: 768px;
+}
+.title h1 {
+    font-family: 'FuturaMediumC';
+    color:#484248;
+    font-weight: 400;
+    margin-top:30px;
+    margin-left:50px;
+    font-size:30px;
+}
+.logo {
+    background-image: url(../img/logo.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;    
+    width: 202px;
+    height: 67px;
+    margin-top:26px;
+    margin-left:44px;
+}
+.step-2 {
+    width: 750px;
+    height: 495px;    
+    position: absolute;
+    z-index: 4;       
+    left:144px;
+    bottom:128px;
+}
+
+/** Start: step-1-2 **/
+@keyframes step-1-2 {
+    
+    from {
+        -webkit-transform: scale(0.7, 0.7);
+        transform: scale(0.7, 0.7);
+        background-image: url(../img/step_1_2.png);  
+    }
+       
+    50% {
+        -webkit-transform: scale(1.0, 1.0);
+        transform: scale(1.0, 1.0);
+        background-image: url(../img/step_1_2.png);  
+              
+    }
+    to {
+        -webkit-transform: scale(0.7, 0.7);
+        transform: scale(0.7, 0.7);
+        background-image: url(../img/step_1_2.png);  
+                
+    }
+}
+
+.step-1-2 span:first-child {
+    -webkit-animation: step-1-2 1.5s ease-in-out 2s;
+    animation: step-1-2 1.5s ease-in-out 2s;
+    -webkit-animation-iteration-count: 4;  
+    animation-iteration-count: 4;  
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    width: 138px;
+    height: 152px;    
+    position: absolute;
+    z-index: 3;         
+    left:430px;
+    bottom:180px;
+    will-change: transform;
+}
+
+.step-1-2 span:last-child {
+    -webkit-animation: step-1-2 1.5s ease-in-out 2s;
+    animation: step-1-2 1.5s ease-in-out 2s;
+    -webkit-animation-iteration-count: 4;    
+    animation-iteration-count: 4;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    width: 138px;
+    height: 152px;    
+    position: absolute;
+    z-index: 3;        
+    right:300px;
+    bottom:280px; 
+    will-change: transform;
+}
+/** End: step-1-2 **/
+
+/** Start: step-1-3 **/
+@keyframes step-1-3 {
+    
+    from {               
+        background-color: #fff;
+        transform: scale(1.0, 1.0);
+        opacity: 0.6
+    }     
+    to {               
+        background-color: #fff;
+        transform: scale(1.0, 1.0);
+        opacity: 0.6
+    }
+}
+.step-1-3 {    
+    -webkit-animation-name: step-1-3;
+    animation-name: step-1-3;
+    -webkit-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+    -webkit-animation-iteration-count: 1;      
+    animation-iteration-count: 1;      
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-delay: 8.5s;
+    animation-delay: 8.5s;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    width: 1024px;
+    height: 768px;    
+    position: absolute;
+    z-index: 4;       
+    left:0;
+    bottom:0;        
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0); 
+    will-change: transform;
+}
+/** End: step-1-3 **/
+
+/** Start: step-2-1 **/
+@keyframes step-2-1 {
+    from {
+        background-image: url(../img/step_2_1.jpg), url(../img/step_2_1_1.jpg);
+        transform: scale(0.5, 0.5);        
+    }    
+    to {
+        background-image: url(../img/step_2_1.jpg), url(../img/step_2_1_1.jpg);
+        transform: scale(1.0, 1.0);                
+    }
+}
+@keyframes step-2-1-1 {    
+    from {
+        background-image: url(../img/step_2_1_1.jpg);               
+    }
+    to {
+        background-image: url(../img/step_2_1_1.jpg);                
+    }
+}
+
+.step-2-1 span:nth-child(1) {
+    -webkit-animation-name: step-2-1, step-2-1-1;
+    animation-name: step-2-1, step-2-1-1;
+    -webkit-animation-duration: 1.5s, 5s;
+    animation-duration: 1.5s, 5s;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-delay: 8.5s, 19.5s;
+    animation-delay: 8.5s, 19.5s;
+    width: 750px;
+    height: 495px;    
+    position: absolute;
+    z-index: 5;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    will-change: transform;
+}
+/** End: step-2-1**/
+
+/** Start: step-2-2 **/
+@keyframes step-2-2 {
+    
+    from {               
+        -webkit-transform: scale(0.5);
+        transform: scale(0.5);
+        background: url(../img/step_2_2.png) 0 46px no-repeat;
+    }
+    to {               
+        -webkit-transform: scale(1.0);
+        transform: scale(1.0);
+        background: url(../img/step_2_2.png) 0 46px no-repeat;             
+    }
+}
+@keyframes step-2-2-1 {
+    
+    from {               
+        opacity: 7;
+        background: url(../img/step_2_2.png) 0 46px no-repeat;
+    }
+    to {               
+        opacity: 0;
+        background: url(../img/step_2_2.png) 0 46px no-repeat;             
+    }
+}
+
+.step-2-1 span:nth-child(2) {
+   	-webkit-animation-name: step-2-2,step-2-2-1;
+   	animation-name: step-2-2,step-2-2-1;
+	-webkit-animation-duration: 1.5s, 5s;
+	animation-duration: 1.5s, 5s;
+	-webkit-animation-delay: 8.5s, 12.0s;    
+	animation-delay: 8.5s, 12.0s;    
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count:1;
+    animation-iteration-count:1;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    width: 750px;
+    height: 495px;    
+    position: absolute;
+    z-index: 6;
+    -webkit-transform: translateZ(0);    
+    transform: translateZ(0);
+    will-change: transform;
+}
+/** End: step-2-2 **/
+
+/** Start: step-2-3 **/
+@keyframes step-2-3 { /* start */
+    
+    from {               
+        -webkit-transform: scale(0.5, 0.5);
+        transform: scale(0.5, 0.5);
+        background: url(../img/step_2_3.png) 100px 336px no-repeat;
+    }
+    to {               
+        -webkit-transform: scale(1.0, 1.0);
+        transform: scale(1.0, 1.0);
+        background: url(../img/step_2_3.png) 100px 336px no-repeat;             
+    }
+}
+
+@keyframes step-2-3-1 { /* end */
+    
+    from {               
+        opacity: 7;
+        background: url(../img/step_2_3.png) 100px 336px no-repeat;
+    }
+    to {               
+        opacity: 0;
+        background: url(../img/step_2_3.png) 100px 336px no-repeat;             
+    }
+}
+
+.step-2-1 span:nth-child(3) {
+    -webkit-animation-name: step-2-3,step-2-3-1;
+    animation-name: step-2-3,step-2-3-1;
+	-webkit-animation-duration: 1.5s, 5s;
+	animation-duration: 1.5s, 5s;
+	-webkit-animation-delay: 8.5s, 15.0s;    
+	animation-delay: 8.5s, 15.0s;    
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count:1;
+    animation-iteration-count:1;
+    -webkit-animation-fill-mode: forwards;    
+    animation-fill-mode: forwards;    
+    width: 750px;
+    height: 495px;    
+    position: absolute;
+    z-index: 6;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    will-change: transform;
+}
+/** End: step-2-3 **/
+
+/** Start: step-2-4-l **/
+@keyframes step-2-4-l {
+    
+    from {               
+        
+        background: url(../img/step_2_4_l.png) 202px 367px no-repeat;        
+        animation-timing-function: ease-in;
+        background-size: 184px 146px;
+        opacity: .0;
+    }
+        
+    66% {
+        background: url(../img/step_2_4_l.png) 202px 367px no-repeat;        
+        animation-timing-function: ease-in-out;
+        background-size: 184px 146px;
+        opacity: 1;
+    }    
+    to {               
+        animation-timing-function: ease-out;
+        background: url(../img/step_2_4_l.png) 202px 367px no-repeat;
+        background-size: 184px 146px;
+        opacity: .0;
+       
+    }
+}
+
+.step-2-1 span:nth-child(4) {
+    -webkit-animation-name: step-2-4-l;
+    animation-name: step-2-4-l;
+	-webkit-animation-duration: 1.2s;
+	animation-duration: 1.2s;
+	-webkit-animation-delay: 19.0s;
+	animation-delay: 19.0s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    position: absolute;
+    animation-iteration-count:8;
+    z-index: 6;
+    width: 750px;
+    height: 495px;            
+    -webkit-transform: translateZ(0);    
+    transform: translateZ(0);
+    will-change: transform;
+    
+}
+/** End: step-2-4-l **/
+
+/** Start: step-2-4-r **/
+@keyframes step-2-4-r {
+    
+    from {               
+        
+        background: url(../img/step_2_4_r.png) 486px 360px no-repeat;        
+        animation-timing-function: ease-in;
+        background-size: 184px 146px;
+        opacity: .0;
+    }
+        
+    66% {
+        background: url(../img/step_2_4_r.png) 486px 360px no-repeat;        
+        animation-timing-function: ease-in-out;
+        background-size: 184px 146px;
+        opacity: 1;
+    }    
+    to {               
+        animation-timing-function: ease-out;
+        background: url(../img/step_2_4_r.png) 486px 360px no-repeat;
+        background-size: 184px 146px;
+        opacity: .0;
+       
+    }
+}
+
+.step-2-1 span:nth-child(5) {
+    -webkit-animation-name: step-2-4-r;
+    animation-name: step-2-4-r;
+	-webkit-animation-duration: 1.2s;
+	animation-duration: 1.2s;
+	-webkit-animation-delay: 19.0s;
+	animation-delay: 19.0s;
+    -webkit-animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    position: absolute;
+    -webkit-animation-iteration-count:8;
+    animation-iteration-count:8;
+    z-index: 6;
+    width: 750px;
+    height: 495px;            
+    -webkit-transform: translateZ(0);    
+    transform: translateZ(0);
+    will-change: transform;
+    
+}
+/** End: step-2-4-l **/
+
+/** Start: step-2-5 **/
+@keyframes step-2-5 {
+    
+    from {               
+        -webkit-transform: scale(0.5, 0.5);
+        transform: scale(0.5, 0.5);
+        background-image: url(../img/step_2_5.png), url(../img/step_2_5_1.png);
+        background-repeat: no-repeat;
+        background-position: 0 0;
+    }
+    to {               
+        -webkit-transform: scale(1.0, 1.0);
+        transform: scale(1.0, 1.0);
+        background-image: url(../img/step_2_5.png), url(../img/step_2_5_1.png);
+        background-repeat: no-repeat;
+        background-position: 0 0;
+    }
+}
+
+@keyframes step-2-5-1 {
+    
+    from {               
+        
+        background-image: url(../img/step_2_5_1.png);
+        background-repeat: no-repeat;
+        background-position: 0 0;
+    }
+    to {               
+        
+        background-image: url(../img/step_2_5_1.png);
+        background-repeat: no-repeat;
+        background-position: 0 0;
+    }
+}
+
+.step-2-1 span:nth-child(6) {
+    -webkit-animation-name: step-2-5,step-2-5-1;
+    animation-name: step-2-5,step-2-5-1;
+	-webkit-animation-duration: 1.5s, 1s;
+	animation-duration: 1.5s, 1s;
+	-webkit-animation-delay: 8.5s, 19.5s;    
+	animation-delay: 8.5s, 19.5s;    
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count:1;
+    animation-iteration-count:1;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    width: 750px;
+    height: 495px;    
+    position: absolute;
+    z-index: 25;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    will-change: transform;
+}
+/** End: step-2-5 **/
+/** **/
+@keyframes step-3-1-l { 
+    
+    from {
+        transform: scale(0.5, 0.5);        
+        background-image: url(../img/step_3_1_l.png);
+        background-repeat: no-repeat;                
+        background-position: 291px 40px, 287px 62px, 285px 80px, 287px 97px, 291px 115px, 272px 50px, 271px 69px, 271px 89px, 275px 105px, 272px 126px, 254px 58px, 259px 79px, 257px 113px;
+    }  
+    
+    to {
+        transform: scale(1.0, 1.0);
+        background-image: url(../img/step_3_1_l.png), url(../img/step_3_1_l.png), url(../img/step_3_1_l.png), url(../img/step_3_1_l.png), url(../img/step_3_1_l.png), url(../img/step_3_1_l.png), url(../img/step_3_1_l.png), url(../img/step_3_1_l.png), url(../img/step_3_1_l.png), url(../img/step_3_1_l.png), url(../img/step_3_1_l.png), url(../img/step_3_1_l.png), url(../img/step_3_1_l.png);
+        background-repeat: no-repeat;                
+        background-position: 291px 40px, 287px 62px, 285px 80px, 287px 97px, 291px 115px, 272px 50px, 271px 69px, 271px 89px, 275px 105px, 272px 126px, 254px 58px, 259px 79px, 257px 113px;
+    }
+}
+
+@keyframes step-3-1-l-a { 
+    
+    from {                
+        background-image: url(../img/step_3_1_l.png);
+        background-repeat: no-repeat;                
+        background-position: 291px 40px, 287px 62px, 285px 80px, 287px 97px, 291px 115px, 272px 50px, 271px 69px, 271px 89px, 275px 105px, 272px 126px, 254px 58px, 259px 79px, 257px 113px;
+    }    
+    50% {
+        background-image: url(../img/step_3_1_l.png), url(../img/step_3_1_l.png), url(../img/step_3_1_l.png), url(../img/step_3_1_l.png), url(../img/step_3_1_l.png), url(../img/step_3_1_l.png), url(../img/step_3_1_l.png), url(../img/step_3_1_l.png), url(../img/step_3_1_l.png), url(../img/step_3_1_l.png), url(../img/step_3_1_l.png), url(../img/step_3_1_l.png), url(../img/step_3_1_l.png);
+        background-repeat: no-repeat;                
+        background-position: 144px 114px, 123px 140px, 60px 115px, 205px 162px, 90px 180px, 144px 140px, 100px 150px, 30px 125px, 90px 129px, 138px 100px, 184px 148px, 222px 122px, 183px 174px;        
+    }
+    90% {
+        background-image: url(../img/step_3_1_l.png), url(../img/step_3_1_l.png), url(../img/step_3_1_l.png), url(../img/step_3_1_l.png), url(../img/step_3_1_l.png), url(../img/step_3_1_l.png), url(../img/step_3_1_l.png), url(../img/step_3_1_l.png), url(../img/step_3_1_l.png), url(../img/step_3_1_l.png), url(../img/step_3_1_l.png), url(../img/step_3_1_l.png), url(../img/step_3_1_l.png);
+        background-repeat: no-repeat;                
+        background-position: 144px 426px, 123px 420px, 60px 447px, 205px 448px, 90px 465px, 144px 400px, 100px 405px, 30px 440px, 90px 427px, 138px 460px, 184px 413px, 222px 430px, 183px 460px; 
+       opacity: 1;
+    }
+    to {                
+        background-image: url(../img/step_3_1_l.png), url(../img/step_3_1_l.png), url(../img/step_3_1_l.png), url(../img/step_3_1_l.png), url(../img/step_3_1_l.png), url(../img/step_3_1_l.png), url(../img/step_3_1_l.png), url(../img/step_3_1_l.png), url(../img/step_3_1_l.png), url(../img/step_3_1_l.png), url(../img/step_3_1_l.png), url(../img/step_3_1_l.png), url(../img/step_3_1_l.png);
+        background-repeat: no-repeat;               
+        background-position: 144px 426px, 123px 420px, 60px 447px, 205px 448px, 90px 465px, 144px 400px, 100px 405px, 30px 440px, 90px 427px, 138px 460px, 184px 413px, 222px 430px, 183px 460px;
+        opacity: 0;
+    }
+}
+
+.step-3-1-l{
+    -webkit-animation-name: step-3-1-l, step-3-1-l-a;
+    animation-name: step-3-1-l, step-3-1-l-a;
+    -webkit-animation-duration: 1.5s, 9.5s;
+    animation-duration: 1.5s, 9.5s;
+    -webkit-animation-iteration-count: 1;      
+    animation-iteration-count: 1;      
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-delay: 8.5s, 9.5s;
+    animation-delay: 8.5s, 9.5s;
+    width: 100%;
+    height: 100%;    
+    position: absolute;
+    z-index: 5;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    will-change: transform;
+}
+
+
+/** **/
+@keyframes step-3-1-r { 
+    
+    from {
+        transform: scale(0.5, 0.5);        
+        background-image: url(../img/step_3_1_r.png);
+        background-repeat: no-repeat;                
+        background-position: 450px 36px, 454px 61px, 450px 82px, 453px 101px, 454px 118px, 466px 42px, 468px 55px, 464px 70px, 466px 85px, 468px 110px, 484px 55px, 480px 75px, 476px 96px, 466px 127px;
+    }  
+    
+    to {
+        transform: scale(1.0, 1.0);
+        background-image: url(../img/step_3_1_r.png), url(../img/step_3_1_r.png), url(../img/step_3_1_r.png), url(../img/step_3_1_r.png), url(../img/step_3_1_r.png), url(../img/step_3_1_r.png), url(../img/step_3_1_r.png), url(../img/step_3_1_r.png), url(../img/step_3_1_r.png), url(../img/step_3_1_r.png), url(../img/step_3_1_r.png), url(../img/step_3_1_r.png), url(../img/step_3_1_r.png);
+        background-repeat: no-repeat;                
+        background-position: 450px 36px, 454px 61px, 450px 82px, 453px 101px, 454px 118px, 466px 42px, 468px 55px, 464px 70px, 466px 85px, 468px 110px, 484px 55px, 480px 75px, 476px 96px, 466px 127px;
+    }
+}
+
+@keyframes step-3-1-r-a { 
+    
+    from {                
+        background-image: url(../img/step_3_1_r.png);
+        background-repeat: no-repeat;                
+        background-position: 450px 36px, 454px 61px, 450px 82px, 453px 101px, 454px 118px, 466px 42px, 468px 55px, 464px 70px, 466px 85px, 468px 110px, 484px 55px, 480px 75px, 476px 96px, 466px 127px;
+    }    
+    50% {
+        background-image: url(../img/step_3_1_r.png), url(../img/step_3_1_r.png), url(../img/step_3_1_r.png), url(../img/step_3_1_r.png), url(../img/step_3_1_r.png), url(../img/step_3_1_r.png), url(../img/step_3_1_r.png), url(../img/step_3_1_r.png), url(../img/step_3_1_r.png), url(../img/step_3_1_r.png), url(../img/step_3_1_r.png), url(../img/step_3_1_r.png), url(../img/step_3_1_r.png);
+        background-repeat: no-repeat;                
+        background-position: 565px 100px, 558px 113px, 606px 137px, 615px 110px, 610px 82px, 470px 143px, 537px 106px, 654px 168px, 500px 109px, 693px 103px, 627px 120px, 643px 110px, 466px 127px;        
+    }
+    90% {
+        background-image: url(../img/step_3_1_r.png), url(../img/step_3_1_r.png), url(../img/step_3_1_r.png), url(../img/step_3_1_r.png), url(../img/step_3_1_r.png), url(../img/step_3_1_r.png), url(../img/step_3_1_r.png), url(../img/step_3_1_r.png), url(../img/step_3_1_r.png), url(../img/step_3_1_r.png), url(../img/step_3_1_r.png), url(../img/step_3_1_r.png), url(../img/step_3_1_r.png);
+        background-repeat: no-repeat;                
+        background-position: 565px 390px, 538px 381px, 606px 384px, 615px 336px, 610px 360px, 470px 405px, 537px 450px, 654px 380px, 500px 375px, 693px 364px, 690px 388px, 643px 465px, 466px 364px; 
+       opacity: 1;
+    }
+    to {                
+        background-image: url(../img/step_3_1_r.png), url(../img/step_3_1_r.png), url(../img/step_3_1_r.png), url(../img/step_3_1_r.png), url(../img/step_3_1_r.png), url(../img/step_3_1_r.png), url(../img/step_3_1_r.png), url(../img/step_3_1_r.png), url(../img/step_3_1_r.png), url(../img/step_3_1_r.png), url(../img/step_3_1_r.png), url(../img/step_3_1_r.png), url(../img/step_3_1_r.png);
+        background-repeat: no-repeat;               
+        background-position: 565px 390px, 538px 381px, 606px 384px, 615px 336px, 610px 360px, 470px 405px, 537px 450px, 654px 380px, 500px 375px, 693px 364px, 690px 388px, 643px 465px, 466px 364px;
+        opacity: 0;
+    }
+}
+
+.step-3-1-r{
+    -webkit-animation-name: step-3-1-r, step-3-1-r-a;
+    animation-name: step-3-1-r, step-3-1-r-a;
+    -webkit-animation-duration: 1.5s, 9.5s;
+    animation-duration: 1.5s, 9.5s;
+    -webkit-animation-iteration-count: 1;      
+    animation-iteration-count: 1;      
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-delay: 8.5s, 9.5s;
+    animation-delay: 8.5s, 9.5s;
+    width: 100%;
+    height: 100%;    
+    position: absolute;
+    z-index: 5;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    will-change: transform;
+}
